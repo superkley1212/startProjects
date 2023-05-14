@@ -20,6 +20,11 @@ async def cmdtest(msg: types.Message):
     with open('leontiev2.jpg', 'rb') as photo:
         await msg.answer_photo(photo)
 
+@dp.message_handler(commands='sunglasses')
+async def cmdtest(msg: types.Message):
+    with open('sunglasses.jpg', 'rb') as photo:
+        await msg.answer_photo(photo)
+
 
 
 
